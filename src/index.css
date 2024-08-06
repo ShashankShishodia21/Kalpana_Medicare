@@ -1,0 +1,739 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+/* App jsx Code  */
+
+.landing{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+}
+/* Navbar jsx Code  */
+.Navbar {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 9999;
+}
+.Navbar-main{
+    width: 90%;
+    height: 70%;
+    border-radius: 40px;
+    background-color: white;
+    background: -webkit-linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo h1{
+    color: white;
+    display: flex;
+    gap: 5px;
+}
+.logo h1 span{
+    color: rgb(59, 92, 197);
+}
+.links{
+    display: flex;
+    gap: 40px;
+}
+.links a{
+    color: white;
+    font-weight: 700;
+    transition: ease-in-out 0.2s;
+    font-size: 18px;
+}
+.links a:hover{
+    transform: scale(1.1);
+    color: rgb(59, 92, 197);
+}
+
+/* Home jsx Code */
+.Home{
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home-main{
+    z-index: -5450;
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+    display: flex;
+
+}
+.Home-img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home-img img{
+    width: 70%;
+    height: 60%;
+    border-radius: 50%;
+}
+.Home-info{
+    padding: 20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 5vw;
+    font-weight: 800;
+}
+.Home-info h1 span{
+    background: -webkit-linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* About jsx Code */
+.About{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.About-heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(59, 92, 197);
+    font-size: 3vw;
+    font-weight: 900;
+}
+.About-main{
+    background: -webkit-linear-gradient(45deg,#66a6ff 0%, #89f7fe 50%, #66a6ff 100%);
+    width: 95%;
+    height: 90%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.About-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+}
+.About-main-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(59, 92, 197);
+    font-size: 2vw;
+    font-weight: 900;
+}
+.About-info-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.About-info-data h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(59, 92, 197);
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+.About-info-data p{
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+}
+.About-info-data span{
+    color: rgb(59, 92, 197);
+}
+/* Product jsx Code */
+
+.Products{
+    width: 100%;
+    height: 120vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Products-main{
+    width: 95%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(4px);
+    border-radius: 25px; 
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;  
+}
+.Products-heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Products-heading h1{
+    background-color: rgb(59, 92, 197);
+    padding: 5px 15px;
+    color: white;
+    border-radius: 15px;
+    font-size: 2.5vw;
+}
+.Products-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    gap: 25px;
+}
+.Card-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: 25px;
+}
+.Card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.Card img{
+    border-radius: 25px;
+    width: 80%;
+    height: 70%;
+    background-position: center;
+    object-fit: cover;
+    transition: ease-in-out 0.3s;
+}
+.Card img:hover{
+    transform: scale(1.04);
+}
+.Card h1{
+    font-size: 1.3vw;
+    color: rgb(59, 92, 197);
+    font-weight: 800;
+}
+.Card p{
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+.Products-More{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 35%;
+    gap: 20px;
+}
+.Products-more-heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Products-more-heading h1{
+    background-color: rgb(59, 92, 197);
+    padding: 5px 15px;
+    color: white;
+    border-radius: 15px;
+    font-size: 2vw;
+}
+
+.card-container{
+    width: 100%;
+    height: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 30%;
+    height: 90%;
+    overflow: hidden;
+    margin: 10px;
+    background-color: white;  
+}
+.card-img{
+    margin: 15px 10%;
+    width: 80%;
+    border-radius: 15px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: ease-in-out 0.5s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.card-div{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.card-div h2{
+    color: rgb(59, 92, 197);
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+.card-div p{
+    font-weight: 100;
+    color: black;
+    font-size: 0.8vw;
+}
+/* Contact jsx */
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.form h1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: rgb(59, 92, 197);
+}
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    gap: 15px;
+}
+.form form label{
+    font-size: 1.2vw;
+}
+.form form input{
+    text-align: center;
+    width: 60%;
+    height: 15%;
+    border-radius: 20px;
+    padding: 0px 10px;
+    color: rgb(59, 92, 197);
+}
+.special{
+    height: 20%;
+
+}
+.form button{
+    font-size: 1.3vw;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(59, 92, 197);
+    transition: ease-in-out 0.3s;
+}
+.form button:hover{
+    transform: scale(1.05);
+    color: rgb(59, 92, 197);
+    background-color: white;
+}
+
+/* Footer jsx Code */
+
+.Footers{
+    width: 100%;
+    height: 8%;
+    background: -webkit-linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-weight: 300;
+}
+.Footers h1{
+    font-size: 1.3vw;
+    color: rgb(59, 92, 197);
+    font-weight: 800;
+}
+.Footers h1 span{
+    color: white;
+}
+.Footers h1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Footers p{
+    font-size: 1vw;
+}
+@media only screen and (max-width: 1100px) and (min-width: 700px){
+    .Navbar-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .links{
+        display: none;
+    }
+    .Home-img img{
+        width: 80%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    .Home-info{
+        font-size: 6vw;
+    }
+    .About-info-data h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(59, 92, 197);
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
+    .About-info-data p{
+        color: black;
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .Products{
+        height: 150vh;
+    }
+    .Products-Container{
+        gap: 15px;
+    }
+    .Card{
+        gap: 10px;
+    }
+    .Card img{
+        border-radius: 15px;
+        width: 80%;
+        height: 70%;
+    }
+    .Card h1{
+        font-size: 2vw;
+        color: rgb(59, 92, 197);
+        font-weight: 800;
+    }
+    .Card p{
+        font-size: 1.2vw;
+    }
+    .Products-More{
+        gap: 12px;
+    }
+    .Products-more-heading{
+        height: 0%;
+    }
+    .card-container{
+        height: 95%;
+    }
+    .card{
+        width: 35%;
+        height: 100%;
+    }
+    .card-div h2{
+        color: rgb(59, 92, 197);
+        font-weight: 700;
+        font-size: 1.6vw;
+    }
+    .card-div p{
+        color: black;
+        font-size: 6px;
+    }
+
+    .form{
+        height: 80%;
+    }
+    .form h1{
+        font-size: 2.3vw;
+    }
+    .form form label{
+        font-size: 1.8vw;
+    }
+    .form form input{
+        width: 80%;
+        height: 10%;
+        border-radius: 10px;
+    }
+    .form button{
+        font-size: 1.8vw;
+    }
+    .Footers h1{
+        font-size: 2.5vw;
+        color: rgb(59, 92, 197);
+        font-weight: 800;
+    }
+    .Footers p{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 699px) and (min-width: 375px){
+    .links{
+        display: none;
+    }
+    .Navbar-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+
+    .Home-main{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Home-img{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Home-img img{
+        width: 50%;
+        height: 60%;
+        border-radius: 50%;
+    }
+    .Home-info{
+        justify-content: start;
+        padding: 20px;
+        width: 100%;
+        height: 50%;
+        font-size: 8vw;
+        font-weight: 800;
+    }
+
+    .About-heading{
+        width: 100%;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(59, 92, 197);
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    .About-main{
+        flex-direction: column;
+        gap: 15px;
+        height: 95%;
+        padding: 15px 0px;
+    }
+    .About-info{
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        gap: 15px;
+    }
+    .About-main-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(59, 92, 197);
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    .About-info-data h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(59, 92, 197);
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .About-info-data p{
+        color: black;
+        font-size: 9px;
+        font-weight: 100;
+    }
+
+    .Products{
+        height: 300vw;
+    }
+    .Products-heading h1{
+        font-size: 3vw;
+    }
+    .Products-Container{
+        gap: 10px;
+    }
+    .Card-Container{
+        gap: 10px;
+    }
+    .Card{
+        gap: 10px;
+        width: 50%;
+    }
+    .Card img{
+        border-radius: 10px;
+        width: 80%;
+        height: 70%;
+    }
+    .Card h1{
+        font-size: 2.4vw;
+        color: rgb(59, 92, 197);
+        font-weight: 800;
+    }
+    .Card p{
+        font-size: 1.8vw;
+    }
+
+    .Products-More{
+        gap: 12px;
+    }
+    .Products-more-heading{
+        height: 0%;
+    }
+    .card-container{
+        height: 95%;
+    }
+    .card{
+        width: 90%;
+        height: 100%;
+    }
+    .card-div h2{
+        color: rgb(59, 92, 197);
+        font-weight: 700;
+        font-size: 2.6vw;
+    }
+    .card-div p{
+        color: black;
+        font-size: 1.8vw;
+    }
+    .Products-more-heading h1{
+        background-color: rgb(59, 92, 197);
+        padding: 5px 15px;
+        color: white;
+        border-radius: 15px;
+        font-size: 3vw;
+    }
+
+    .form{
+        height: 100%;
+        gap: 8px;
+    }
+    .form h1{
+        font-size: 4vw;
+        height: 5%;
+    }
+    .form form{
+        height: 90%;
+    }
+    .form form label{
+        font-size: 2.5vw;
+    }
+    .form form input{
+        width: 50%;
+        border-radius: 10px;
+    }
+    .form button{
+        font-size: 2.5vw;
+    }
+    .Footers h1{
+        font-size: 3.5vw;
+        color: rgb(59, 92, 197);
+        font-weight: 800;
+    }
+    .Footers p{
+        font-size: 1.5vw;
+    }
+}
