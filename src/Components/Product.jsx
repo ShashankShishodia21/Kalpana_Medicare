@@ -10,24 +10,24 @@ function Product() {
           <div className='Products-Container'>
               <div className='Card-Container'>
                 <div className='Card'>
-                  <img src="https://img1.wsimg.com/isteam/ip/0d4d7587-cb1f-4308-b027-c80ac4f882cb/WhatsApp%20Image%202022-11-20%20at%2012.47.29%20AM.jpeg/:/cr=t:0%25,l:27.46%25,w:45.08%25,h:100%25/rs=w:365,h:365,cg:true" alt="" />
+                  <img src=".\src\assets\rabekal.webp" alt="" />
                   <h1>RabeKAL- DSR</h1>
                   <p>Entric Coated Rabelprazole Sodium and sustained Release Domperidone Capsules.</p>
                 </div>
                 <div className='Card'>
-                  <img src="https://img1.wsimg.com/isteam/ip/0d4d7587-cb1f-4308-b027-c80ac4f882cb/WhatsApp%20Image%202022-11-20%20at%2012.46.25%20AM.jpeg/:/cr=t:0%25,l:22.7%25,w:54.61%25,h:100%25/rs=w:365,h:365,cg:true" alt="" />
+                  <img src=".\src\assets\pantokal.webp" alt="" />
                   <h1>PantoKAL-DSR capsules</h1>
                   <p> Pantoprazole sodium (EC ) & domperidone (SR) Capsules</p>
                 </div>
               </div>
               <div className='Card-Container'>
                 <div className='Card'>
-                  <img src="https://img1.wsimg.com/isteam/ip/0d4d7587-cb1f-4308-b027-c80ac4f882cb/WhatsApp%20Image%202023-01-03%20at%207.00.50%20PM.jpeg/:/cr=t:0%25,l:32.8%25,w:52.75%25,h:100%25/rs=w:365,h:365,cg:true" alt="" />
+                  <img src=".\src\assets\parakal.webp" alt="" />
                   <h1>ParaKAL-A Tablets</h1>
                   <p> Aceclofenac 100 mg + Paracetamol 325 mg</p>
                 </div>
                 <div className='Card'>
-                  <img src="https://img1.wsimg.com/isteam/ip/0d4d7587-cb1f-4308-b027-c80ac4f882cb/WhatsApp%20Image%202023-03-01%20at%207.08.39%20PM.jpeg/:/cr=t:0%25,l:21.89%25,w:56.22%25,h:100%25/rs=w:365,h:365,cg:true" alt="" />
+                  <img src=".\src\assets\parakaln.webp" alt="" />
                   <h1>ParaKAL-N Tablets</h1>
                   <p>Nimesulide & Paracetamol Tablets</p>
                 </div>
